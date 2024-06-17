@@ -42,7 +42,7 @@
 	2. Put adapter into monitor mode
 	    1. Need to run airmon-ng with check-kill option:
 	    ```bash
-	    sudo airmon-ng check kill <interface>
+	    sudo airmon-ng check kill
 	    sudo airmon-ng start <interface>
 	    ```
 2. Scan WiFi networks
@@ -66,8 +66,15 @@
 4. Crack WiFi password
 	1. Use aircrack-ng or hashcat`
 		1. Run against a common wordlist (rockyou.txt) or generate your own wordlist (crewl, crunch or manually)
+     	```bash
+      	sudo aircrack-ng -w /path/to/wordlist <name of .cap file> 
+      	```
 5. One password is obtained, get on the network
 	1. Need to restart network manager service
+   		```bash
+     		sudo ifconfig <interface> up
+		sudo service NetworkManager restart
+     		```
 	2. Connect
 	3. Complete additional objectives
 
