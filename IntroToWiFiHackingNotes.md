@@ -98,3 +98,4 @@
 
 - Darknet Diaries Episode: https://darknetdiaries.com/episode/85/
 
+- WiFi hacking lab setup with ESP chip and Arduino: https://www.youtube.com/watch?v=IK0M5ISGevo
