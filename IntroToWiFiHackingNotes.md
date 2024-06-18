@@ -13,7 +13,7 @@
 	- WiFi Cantenna / Extender
 	- WiGLE
 	- hashcat
-	- crewl
+	- cewl
 	- crunch
 
 ### WPA2 Attack Methodology 
@@ -65,7 +65,7 @@
 	3. Stop traffic collection
 4. Crack WiFi password
 	1. Use aircrack-ng or hashcat`
-		1. Run against a common wordlist (rockyou.txt) or generate your own wordlist (crewl, crunch or manually)
+		1. Run against a common wordlist (rockyou.txt) or generate your own wordlist (cewl, crunch or manually)
      	```bash
       	sudo aircrack-ng -w /path/to/wordlist <name of .cap file> 
       	```
